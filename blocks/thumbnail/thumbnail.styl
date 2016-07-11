@@ -1,0 +1,60 @@
+.thumbnail
+  &__link
+    position relative
+  &__vail
+    margin-top 2.5rem
+  margin-bot 3rem
+  display block
+  height 100%
+  width 100%
+  border-radius 5px
+  border 0
+  &:hover:after
+      opacity 1
+    &:after
+      content 'View'
+      font-size .7rem
+      text-align center
+      border: solid 3px rgba(255, 255, 255, .5)
+      border-radius 6px
+      opacity 0
+      padding 0 1rem
+      line-height 1.5rem
+      color #fff
+      position absolute
+      left 50%
+      top 50%
+      transform translate(-50%, -50%)
+      display inline-block
+      box-sizing border-box
+      transition .5s
+  &:hover:before
+      opacity 1
+    &:before
+      content ''
+      background url("images/overlay.png")
+      position absolute
+      opacity 0
+      border-radius 6px
+      top 0
+      left 0
+      padding .3rem
+      display block
+      height 75%
+      width 90%
+      box-sizing border-box
+      transition .5s
+  &__image
+    border-radius 0.35rem
+    margin 2rem 0
+    height 95%
+    width 95%
+    display block
+  &__caption
+    font-size 1.2rem
+    font-weight 100
+  &__description
+    margin-bottom 4rem
+    font-weight 100
+    
+  
